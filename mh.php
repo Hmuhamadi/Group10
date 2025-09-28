@@ -36,6 +36,7 @@
 
     <p><a href="index.php">Go back to homepage</a></p>
 
+<<<<<<< HEAD
     <!DOCTYPE html>
 <html>
 <head>
@@ -65,6 +66,9 @@
 </body>
 </html>
 
+=======
+    <h1>this is foex</h1>
+>>>>>>> ed702635a48aa8a20d0e12c4559a9fc98680e81e
 </body>
 </html>
 
