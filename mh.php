@@ -35,6 +35,36 @@
     ?>
 
     <p><a href="index.php">Go back to homepage</a></p>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Create Table</title>
+</head>
+<body>
+    <h3>Create Table Example</h3>
+    // new pushing
+
+    <?php
+    $conn = new mysqli("localhost", "root", "", "testdb"); // DB connection
+    if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
+
+    $sql = "CREATE TABLE simple_table (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(50)
+    )";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "<p>Table created successfully!</p>";
+    } else {
+        echo "<p>Table already exists or error: " . $conn->error . "</p>";
+    }
+
+    $conn->close();
+    ?>
+</body>
+</html>
+
 </body>
 </html>
 
