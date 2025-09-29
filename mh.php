@@ -35,6 +35,8 @@
     ?>
 
     <p><a href="index.php">Go back to homepage</a></p>
+
+    <h1>this is foex</h1>
 </body>
 </html>
 
